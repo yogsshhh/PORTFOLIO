@@ -184,23 +184,25 @@ section {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 90vh;
-    padding-top: 6rem;
-    gap: 5rem;
+    padding-top: 8rem;
+    gap: 4rem;
 }
 
-.hero-left {
-    flex: 0 0 auto;
-}
-
-.hero-right {
+.hero-content {
     flex: 1;
-    max-width: 500px;
 }
 
-.hero-title {
-    font-size: 5rem;
+.role {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.name {
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -208,86 +210,60 @@ section {
     color: var(--text-primary);
 }
 
-.hero-subtitle {
-    font-size: 1.2rem;
+.description {
     color: var(--text-secondary);
-    line-height: 1.6;
+    font-size: 1.1rem;
+    max-width: 500px;
     margin-bottom: 2.5rem;
-}
-
-.profile-card {
-    background: #ffffff;
-    border: none;
-    border-radius: 30px;
-    padding: 1.5rem;
-    width: 380px;
-    max-width: 100%;
-    transition: var(--transition);
-    text-align: center;
-}
-
-.profile-card:hover {
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-    transform: translateY(-5px);
-}
-
-.profile-img-container {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    background: #e63946;
-}
-
-.profile-img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease;
-}
-
-.profile-card:hover .profile-img {
-    transform: scale(1.05);
-}
-
-.profile-name {
-    color: #111111;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    letter-spacing: -1px;
-}
-
-.profile-desc {
-    color: #666666;
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
     line-height: 1.6;
-    padding: 0 1rem;
 }
 
-.profile-socials {
+.hero-socials {
     display: flex;
-    justify-content: center;
     gap: 1.5rem;
-    padding-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-.profile-socials a {
-    color: #ff5e00;
-    font-size: 1.4rem;
+.hero-socials a {
+    color: var(--text-secondary);
+    font-size: 1.5rem;
     transition: var(--transition);
 }
 
-.profile-socials a:hover {
-    color: #cc4a00;
+.hero-socials a:hover {
+    color: var(--text-primary);
     transform: translateY(-3px);
 }
 
 .cta-buttons {
     display: flex;
     gap: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.profile-raw-img {
+    width: 380px;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.profile-raw-img:hover {
+    transform: scale(1.02);
 }
 
 /* About Section */
@@ -619,23 +595,25 @@ footer {
 /* Responsive Design */
 @media (max-width: 900px) {
     .hero {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+        flex-direction: column-reverse;
+        text-align: left;
+        align-items: flex-start;
         padding-top: 6rem;
         gap: 3rem;
     }
     
-    .hero-right {
-        text-align: center;
-        max-width: 100%;
+    .hero-image {
+        justify-content: flex-start;
+        width: 100%;
     }
     
-    .hero-title { font-size: 3.5rem; }
+    .profile-raw-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/5;
+    }
     
-    .profile-socials { justify-content: center; }
-    
-    .cta-buttons { justify-content: center; }
+    .name { font-size: 2.8rem; }
     
     .about-container {
         flex-direction: column;
