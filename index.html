@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Gokul<span class="dot">.</span></h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2 class="greeting">Hello, I'm</h2>
+                <h1 class="name">Gokul</h1>
+                <h3 class="role">Creative Professional & Developer</h3>
+                <p class="description">I build interactive, modern, and high-performance applications. Always learning, building, and exploring new technologies.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=600&auto=format&fit=crop" alt="Abstract Code" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">UI/UX Design</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm passionate about building excellent software that improves the lives of those around me. I have a keen eye for design and enjoy bringing ideas to life in the browser.</p>
+                    <p>Right now, I am expanding my knowledge in web technologies and learning version control with Git and GitHub to easily share my projects with the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here are a few placeholder projects we can update later!</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img placeholder-img img-1"></div>
+                    <div class="project-info">
+                        <h3>Task Manager App</h3>
+                        <p>A simple and intuitive task management tool built with vanilla JavaScript. Focuses on minimal UI and local storage.</p>
+                        <div class="project-tech">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img placeholder-img img-2"></div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A real-time weather application that fetches data from an external API to display beautiful forecasts.</p>
+                        <div class="project-tech">
+                            <span>API</span><span>JS</span><span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img placeholder-img img-3"></div>
+                    <div class="project-info">
+                        <h3>E-Commerce Mockup</h3>
+                        <p>A static design interface for an online store featuring fluid animations and a responsive product grid.</p>
+                        <div class="project-tech">
+                            <span>HTML</span><span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="contact-box">
+                <h2 class="section-title">Let's Connect</h2>
+                <p>I'm currently looking for new opportunities and collaborations. My inbox is always open!</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="mailto:gokul@example.com" class="btn primary-btn submit-btn">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gokul. Built with <i class="fa-solid fa-heart" style="color: #ff3366;"></i> and deployed on GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
