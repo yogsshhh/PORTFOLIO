@@ -400,39 +400,46 @@ section {
     color: var(--text-muted);
 }
 
-/* Photos Gallery Section (NEW) */
-.photos-grid {
+/* Tools Section */
+.tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
-.photo-card {
-    aspect-ratio: 1 / 1;
+.tool-card {
     background: var(--surface);
     border: 1px solid var(--surface-border);
     border-radius: 8px;
+    padding: 2rem;
+    transition: var(--transition);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    transition: var(--transition);
-    cursor: pointer;
+    align-items: flex-start;
 }
 
-.photo-card i {
-    font-size: 2rem;
+.tool-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--text-muted);
+    background: var(--surface-hover);
+}
+
+.tool-icon {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 1.2rem;
+}
+
+.tool-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
-.photo-card p {
-    font-size: 0.85rem;
-}
-
-.photo-card:hover {
-    border-color: var(--text-secondary);
+.tool-card p {
     color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 /* Contact Section */
