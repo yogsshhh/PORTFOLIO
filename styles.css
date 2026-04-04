@@ -217,7 +217,7 @@ section {
 }
 
 .accent {
-    color: #8b5cf6;
+    color: var(--text-muted);
 }
 
 .description {
