@@ -199,11 +199,11 @@ section {
 }
 
 .role {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
